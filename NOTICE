@@ -1,0 +1,15 @@
+CarConnect capstone adaptation, 2026.
+
+This repository retains IBM Developer Skills Network starter history and
+Willie Conway's Full-Stack-Developer-Capstone implementation history.
+Reference: https://github.com/Willie-Conway/Full-Stack-Developer-Capstone
+Starter: https://github.com/ibm-developer-skills-network/xrwvm-fullstack_developer_capstone
+The Apache-2.0 LICENSE is preserved. See Git history for original authors.
+
+Adaptation for Huynguyen736: standalone Django dealer/review persistence,
+CSRF-protected APIs, frontend repairs, local baseline sentiment, automated
+verification, container deployment and freshly generated submission evidence.
+
+Screenshots/ contains inherited reference material, not evidence of this fork's
+execution. Only submission/ contains new verification artifacts for this fork.
+Sample dealership and review records are educational fixture data.

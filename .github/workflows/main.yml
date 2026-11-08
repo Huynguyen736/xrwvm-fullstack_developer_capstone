@@ -1,0 +1,61 @@
+name: Capstone CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: server/frontend/package-lock.json
+      - name: Install backend and lint dependencies
+        run: pip install -r server/requirements.txt ruff==0.17.4
+      - name: Lint Python
+        run: ruff check server/djangoapp server/djangoproj
+      - name: Verify migrations and backend tests
+        working-directory: server
+        run: |
+          python manage.py makemigrations --check --dry-run
+          python manage.py test djangoapp -v 2
+      - name: Install and build React
+        working-directory: server/frontend
+        env:
+          CI: 'true'
+          GENERATE_SOURCEMAP: 'false'
+        run: |
+          npm ci --no-audit --no-fund
+          npm test -- --watchAll=false --runInBand
+          npm run build
+      - name: Collect static files and check application
+        working-directory: server
+        run: |
+          python manage.py migrate --noinput
+          python manage.py seed_demo
+          python manage.py collectstatic --noinput
+          python manage.py check
+      - name: Build production container
+        run: docker build -t capstone:ci server
+      - name: Smoke test production container
+        run: |
+          docker run -d --name capstone -p 8000:8000 -e DJANGO_DEBUG=false -e DJANGO_SECRET_KEY=ci-only-ephemeral-test-key-not-used-in-deployment -e DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1 capstone:ci
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:8000/djangoapp/health; then break; fi
+            sleep 2
+          done
+          curl -fsS http://127.0.0.1:8000/djangoapp/health
+          curl -fsS http://127.0.0.1:8000/ > /tmp/home.html
+          grep -q '<div id="root"' /tmp/home.html
+      - name: Container diagnostics
+        if: always()
+        run: docker logs capstone || true

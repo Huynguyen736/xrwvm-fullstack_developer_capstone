@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Generated runtime files and private evidence helpers
+server/staticfiles/
+.ruff_cache/
+**/cookies.txt
