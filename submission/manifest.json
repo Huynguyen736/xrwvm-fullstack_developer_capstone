@@ -104,20 +104,20 @@
   {
     "task": 18,
     "path": "submission/screenshots/get_dealers_loggedin.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 19,
     "path": "submission/screenshots/dealersbystate.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 20,
     "path": "submission/screenshots/dealer_id_reviews.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 21,
@@ -146,25 +146,25 @@
   {
     "task": 25,
     "path": "submission/screenshots/deployed_landingpage.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 26,
     "path": "submission/screenshots/deployed_loggedin.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 27,
     "path": "submission/screenshots/deployed_dealer_detail.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   },
   {
     "task": 28,
     "path": "submission/screenshots/deployed_add_review.jpeg",
-    "ready": false,
-    "remaining": "Browser address bar missing from viewport screenshot"
+    "ready": true,
+    "remaining": null
   }
 ]
