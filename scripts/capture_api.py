@@ -41,7 +41,7 @@ with tempfile.TemporaryDirectory() as tmp:
     logout = run('/djangoapp/logout/', {}, session['csrfToken'])
     root.joinpath('logoutuser').write_text('curl -sS -X POST -b cookies.txt -c cookies.txt -H "Content-Type: application/json" -H "X-CSRFToken: $CSRF_TOKEN" --data "{}" '+base+'/djangoapp/logout/\n\n'+logout+'\n',encoding='utf-8')
     endpoints = {
-        'getdealerreviews':'/djangoapp/reviews/dealer/1',
+        'getdealerreviews':'/djangoapp/reviews/dealer/17',
         'getalldealers':'/djangoapp/get_dealers/',
         'getdealerbyid':'/djangoapp/dealer/1',
         'getdealersbyState':'/djangoapp/get_dealers/Kansas',

@@ -1,0 +1,7 @@
+curl -sS "http://127.0.0.1:8000/djangoapp/analyze/Fantastic%20services"
+
+{
+  "text": "Fantastic services",
+  "sentiment": "positive",
+  "method": "local lexicon baseline"
+}

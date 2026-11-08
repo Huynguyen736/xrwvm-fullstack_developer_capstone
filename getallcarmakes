@@ -1,0 +1,124 @@
+curl -sS "http://127.0.0.1:8000/djangoapp/get_cars"
+
+{
+  "status": 200,
+  "CarMakes": [
+    {
+      "id": 3,
+      "name": "Audi",
+      "description": "Audi vehicles"
+    },
+    {
+      "id": 4,
+      "name": "Kia",
+      "description": "Kia vehicles"
+    },
+    {
+      "id": 2,
+      "name": "Mercedes-Benz",
+      "description": "Mercedes-Benz vehicles"
+    },
+    {
+      "id": 1,
+      "name": "Nissan",
+      "description": "Nissan vehicles"
+    },
+    {
+      "id": 5,
+      "name": "Toyota",
+      "description": "Toyota vehicles"
+    }
+  ],
+  "CarModels": [
+    {
+      "CarMake": "Audi",
+      "CarModel": "A4",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Audi",
+      "CarModel": "A5",
+      "type": "COUPE",
+      "year": 2023
+    },
+    {
+      "CarMake": "Audi",
+      "CarModel": "A6",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Kia",
+      "CarModel": "Carnival",
+      "type": "MINIVAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Kia",
+      "CarModel": "Cerato",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Kia",
+      "CarModel": "Sorento",
+      "type": "SUV",
+      "year": 2023
+    },
+    {
+      "CarMake": "Mercedes-Benz",
+      "CarModel": "A-Class",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Mercedes-Benz",
+      "CarModel": "C-Class",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Mercedes-Benz",
+      "CarModel": "E-Class",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Nissan",
+      "CarModel": "Pathfinder",
+      "type": "SUV",
+      "year": 2023
+    },
+    {
+      "CarMake": "Nissan",
+      "CarModel": "Qashqai",
+      "type": "SUV",
+      "year": 2023
+    },
+    {
+      "CarMake": "Nissan",
+      "CarModel": "X-Trail",
+      "type": "SUV",
+      "year": 2023
+    },
+    {
+      "CarMake": "Toyota",
+      "CarModel": "Camry",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Toyota",
+      "CarModel": "Corolla",
+      "type": "SEDAN",
+      "year": 2023
+    },
+    {
+      "CarMake": "Toyota",
+      "CarModel": "Kluger",
+      "type": "SUV",
+      "year": 2023
+    }
+  ]
+}

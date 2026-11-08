@@ -1,0 +1,59 @@
+curl -sS "http://127.0.0.1:8000/djangoapp/reviews/dealer/17"
+
+{
+  "status": 200,
+  "reviews": [
+    {
+      "id": 43,
+      "name": "Glennis Hackett",
+      "dealership": 17,
+      "review": "Triple-buffered upward-trending conglomeration",
+      "purchase": false,
+      "purchase_date": "2020-08-20",
+      "car_make": "Nissan",
+      "car_model": "Altima",
+      "car_year": 2008,
+      "sentiment": "neutral",
+      "created_at": "2026-11-08T16:59:53.594068+00:00"
+    },
+    {
+      "id": 39,
+      "name": "Donn Wick",
+      "dealership": 17,
+      "review": "Cross-group multimedia firmware",
+      "purchase": false,
+      "purchase_date": "2020-04-29",
+      "car_make": "Buick",
+      "car_model": "Terraza",
+      "car_year": 2006,
+      "sentiment": "neutral",
+      "created_at": "2026-11-08T16:59:53.592893+00:00"
+    },
+    {
+      "id": 33,
+      "name": "Rey Bannell",
+      "dealership": 17,
+      "review": "Up-sized mission-critical initiative",
+      "purchase": true,
+      "purchase_date": "2020-10-31",
+      "car_make": "Pontiac",
+      "car_model": "GTO",
+      "car_year": 2004,
+      "sentiment": "neutral",
+      "created_at": "2026-11-08T16:59:53.591063+00:00"
+    },
+    {
+      "id": 8,
+      "name": "Marmaduke Ashbe",
+      "dealership": 17,
+      "review": "Polarised asynchronous Graphical User Interface",
+      "purchase": true,
+      "purchase_date": "2020-05-06",
+      "car_make": "BMW",
+      "car_model": "530",
+      "car_year": 2006,
+      "sentiment": "neutral",
+      "created_at": "2026-11-08T16:59:53.583291+00:00"
+    }
+  ]
+}

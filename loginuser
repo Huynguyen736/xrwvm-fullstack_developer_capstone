@@ -1,0 +1,7 @@
+# Actual curl execution against http://127.0.0.1:8000
+# CAPSTONE_PASSWORD is a private environment variable; cookie jar is not submitted.
+curl -sS -b cookies.txt -c cookies.txt http://127.0.0.1:8000/djangoapp/session
+# Set CSRF_TOKEN from session.csrfToken, then:
+curl -sS -X POST -b cookies.txt -c cookies.txt -H "Content-Type: application/json" -H "X-CSRFToken: $CSRF_TOKEN" --data "{\"userName\":\"huynguyen736\",\"password\":\"$CAPSTONE_PASSWORD\"}" http://127.0.0.1:8000/djangoapp/login
+
+{"status": "Authenticated", "authenticated": true, "userName": "huynguyen736", "firstName": "Huy", "lastName": "Nguyen", "email": "huy.capstone@example.com", "csrfToken": "kHlYt0BkgLzezlrjoMg6SpSmdw9v5GBe7K5pSbYYhJGNXrvunozkZ3nFoy0K1ssl"}

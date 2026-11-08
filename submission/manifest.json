@@ -1,0 +1,170 @@
+[
+  {
+    "task": 1,
+    "path": "README.md",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 2,
+    "path": "django_server",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 3,
+    "path": "server/frontend/static/About.html",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 4,
+    "path": "server/frontend/static/Contact.html",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 5,
+    "path": "loginuser",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 6,
+    "path": "logoutuser",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 7,
+    "path": "server/frontend/src/components/Register/Register.jsx",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 8,
+    "path": "getdealerreviews",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 9,
+    "path": "getalldealers",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 10,
+    "path": "getdealerbyid",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 11,
+    "path": "getdealersbyState",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 12,
+    "path": "submission/screenshots/admin_login.jpeg",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 13,
+    "path": "submission/screenshots/admin_logout.jpeg",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 14,
+    "path": "getallcarmakes",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 15,
+    "path": "getallcarmakes",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 16,
+    "path": "analyzereview",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 17,
+    "path": "submission/screenshots/get_dealers.jpeg",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 18,
+    "path": "submission/screenshots/get_dealers_loggedin.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 19,
+    "path": "submission/screenshots/dealersbystate.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 20,
+    "path": "submission/screenshots/dealer_id_reviews.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 21,
+    "path": "submission/screenshots/dealership_review_submission.jpeg",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 22,
+    "path": "submission/screenshots/added_review.jpeg",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 23,
+    "path": "CICD",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 24,
+    "path": "deploymentURL",
+    "ready": true,
+    "remaining": null
+  },
+  {
+    "task": 25,
+    "path": "submission/screenshots/deployed_landingpage.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 26,
+    "path": "submission/screenshots/deployed_loggedin.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 27,
+    "path": "submission/screenshots/deployed_dealer_detail.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  },
+  {
+    "task": 28,
+    "path": "submission/screenshots/deployed_add_review.jpeg",
+    "ready": false,
+    "remaining": "Browser address bar missing from viewport screenshot"
+  }
+]
